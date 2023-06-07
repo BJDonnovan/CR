@@ -1,4 +1,4 @@
-const CATALOG = [
+export const CATALOG = [
     {
         id: 'el1',
         name: 'FENDER SQUIER BULLET STRAT HT HSS BLK',
