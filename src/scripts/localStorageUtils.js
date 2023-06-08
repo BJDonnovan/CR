@@ -1,4 +1,4 @@
-export class LocalStorageUtil {
+class LocalStorageUtil {
     getProducts() {
         const productsLocalStorage = localStorage.getItem('products');
         if (productsLocalStorage !== null) {
@@ -24,5 +24,6 @@ export class LocalStorageUtil {
         return { pushProduct, products }
     }
 }
+export const localStorageUtil = new LocalStorageUtil();
  
 

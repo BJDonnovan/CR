@@ -1,9 +1,14 @@
-import * as Prod from "./scripts/Products";
-// import { productsPage } from "./scripts/Products";
-import { localStorageUtil } from "./scripts/localStorageUtils";
+import { Products } from "./scripts/Products";
+import { CATALOG } from "./scripts/catalog";
+import { SetClick } from "./scripts/main";
 import './styles/Products.css';
-var productsPage = new Prod.Products();
+var productsPage = new Products();
 productsPage.render();
-Prod.handleSetLocationStorage();
-// import './src/styles/styles.css'
+for(let i = 0;i<CATALOG.length;i++)
+{
+    var element = document.getElementById(CATALOG[i].id);
+    element.addEventListener('click',SetClick(element,CATALOG[i].id));
+}
+
+
 
