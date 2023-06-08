@@ -45,7 +45,7 @@ export class Products {
                     <span class="products-element__price">
                          ${price.toLocaleString()} Руб
                     </span>
-                    <button class="products-element__btn${activeClass}" onclick="handleSetLocationStorage();">
+                    <button id ="${id}" class="products-element__btn${activeClass}" onclick=" alert('Товар ${name} добавлен в корзину');  ">
                         ${activeText}
                     </button>
                 </li>
