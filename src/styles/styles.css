@@ -61,5 +61,5 @@ h2{
 }
 .products-element__btn_active {
   border: 1px solid transparent;
-  background-image: linear-gradient(to right, #e2f87c, #d6f567, #c8f151, #b9ee38, #a8eb12);
+  background-image: linear-gradient(to right, #e4df84, #e8e267, #f1e951, #eecd38, #ebbc12);
 }

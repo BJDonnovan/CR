@@ -31,6 +31,7 @@ export class Products {
             if (productsStore.indexOf(id) === -1) {
                 activeText = this.labelAdd;
             } else {
+                activeClass = ' '+this.classNameActive;
                 activeText = this.labelRemove;
             }
 
@@ -41,7 +42,7 @@ export class Products {
                     <span class="products-element__price">
                          ${price.toLocaleString()} Руб
                     </span>
-                    <button id ="${id}" class="products-element__btn" >
+                    <button id ="${id}" class="products-element__btn${activeClass}" >
                         ${activeText}
                     </button>
                 </li>
