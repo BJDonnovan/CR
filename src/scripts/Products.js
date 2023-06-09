@@ -9,7 +9,6 @@ export class Products {
     }
 
     SetClick(element,id) {
-
         const { pushProduct, products } = localStorageUtil.putProducts(id);
         if (pushProduct) {
             element.classList.add(this.classNameActive);
@@ -42,7 +41,7 @@ export class Products {
                     <span class="products-element__price">
                          ${price.toLocaleString()} Руб
                     </span>
-                    <button id ="${id}" class="products-element__btn">
+                    <button id ="${id}" class="products-element__btn" >
                         ${activeText}
                     </button>
                 </li>

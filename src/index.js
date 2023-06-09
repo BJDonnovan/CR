@@ -4,11 +4,14 @@ import { CATALOG } from "./scripts/catalog";
 import './styles/styles.css';
 const productsPage = new Products();
 productsPage.render();
-for(let i = 0;i<CATALOG.length;i++)
-{
-    var element = document.getElementById(CATALOG[i].id);
-    element.onclick = productsPage.SetClick(element,CATALOG[i].id)
-}
+CATALOG.forEach(({id}) => {
+var element = document.getElementById(id);
+    element.onclick = function(){productsPage.SetClick(element,id)} 
+});
+
+
+    
+
 
 
 
